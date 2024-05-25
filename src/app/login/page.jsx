@@ -61,7 +61,7 @@ export default function Login() {
                     <input className='border py-2' type="text" name='text' />
                   </label>
                   <button className='bg-slate-950 text-white py-2 px-8 rounded-3xl flex justify-center' onClick={() => signIn("google")}>Sign in</button>
-                  <p>dont't have an accout?<Link className=' border-b border-slate-950 text-sm' href='register'>Sing up</Link></p>
+                  <div>dont't have an accout?<Link className=' border-b border-slate-950 text-sm' href='/register'>Sing up</Link></div>
                 </form>
               </div>
             </div>
