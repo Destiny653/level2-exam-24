@@ -1,0 +1,24 @@
+.carousel-con {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 60px 20px;
+    width: 100%;
+}
+.carousel-item{
+    box-sizing: border-box;
+    width: 300px;
+    height: 370px;
+    animation: carousel 5s linear infinite;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300px);
+    }
+}
