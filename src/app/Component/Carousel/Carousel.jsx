@@ -50,8 +50,8 @@ export default function Carousel() {
     <>
       <div className='carousel-con'>
         {
-          items.map((item) => (
-            <div className='carousel-item bg-black rounded-3xl '><Image className='rounded-3xl' onClick={()=> setImage(item)} src={item.img} alt='image' width={300} height={300} /></div>
+          items.map((item, index) => (
+            <div key={index} className='carousel-item bg-black rounded-3xl '><Image className='rounded-3xl' onClick={()=> setImage(item)} src={item.img} alt='image' width={300} height={300} /></div>
           ))
         }
       </div>

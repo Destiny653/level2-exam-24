@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Carousel from '../Carousel/Carousel'
 import './hero.css'
+import Image from 'next/image'
 
 export default function Hero() {
 
@@ -95,7 +96,7 @@ export default function Hero() {
                 items.map((item, index) => {
                   return (
                     <div key={index}>
-                      <img src={item.img} alt='img' />
+                      <Image src={item.img} alt='img' />
                     </div>
                   )
                 })
